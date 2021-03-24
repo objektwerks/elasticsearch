@@ -1,11 +1,10 @@
 package objektwerks
 
 import org.scalatest.funsuite.AnyFunSuite
-import org.scalatest.BeforeAndAfterAll
 import org.scalatest.matchers.must.Matchers
 
-class Elastic4sTest extends AnyFunSuite with BeforeAndAfterAll with Matchers {
+class Elastic4sTest extends AnyFunSuite with Matchers {
   test("search") {
-    println("search test")
+    println("2021.3.24 - TODO!")
   }
 }
