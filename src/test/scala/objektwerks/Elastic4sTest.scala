@@ -9,6 +9,8 @@ import com.typesafe.config.ConfigFactory
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.must.Matchers
 
+// Symbol 'type com.sksamuel.elastic4s.searches.queries.term.BuildableTermsQuery'
+// is missing from the classpath.
 class Elastic4sTest extends AnyFunSuite with Matchers {
   val conf = ConfigFactory.load("test.conf")
   val url = conf.getString("url")
