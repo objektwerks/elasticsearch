@@ -17,12 +17,15 @@ class Elastic4sTest extends AnyFunSuite with Matchers {
     val client = ElasticClient(ElasticProperties(url))
 
     client.execute {
-      indexInto("bands" / "artists") fields ("name" -> "coldplay") refresh (RefreshPolicy.WAIT_FOR)
-    }.await
+      indexInto("bands" / "artists")
+        .fields ("name" -> "coldplay")
+        .refresh (RefreshPolicy.WAIT_FOR)
+    }.await  // No implicit arguments of type: Handler[SearchRequest, U_]
 
     val response: Response[SearchResponse] = client.execute {
-      search("bands") matchQuery("name", "coldplay")
-    }.await
+      search("bands")
+        .matchQuery("name", "coldplay")
+    }.await  // No implicit arguments of type: Handler[SearchRequest, U_]
 
     println(response.result.hits.hits.head.sourceAsString)
     client.close()
