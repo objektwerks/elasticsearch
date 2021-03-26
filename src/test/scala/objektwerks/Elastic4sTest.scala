@@ -10,7 +10,7 @@ import org.scalatest.matchers.must.Matchers
 
 class Elastic4sTest extends AnyFunSuite with Matchers {
   test("search") {
-    val client = ElasticClient(ElasticProperties("http://objektwerks.local:9200"))
+    val client = ElasticClient(ElasticProperties("http://localhost:9200"))
 
     client.execute {
       indexInto("bands" / "artists") fields ("name" -> "coldplay") refresh (RefreshPolicy.WAIT_FOR)
