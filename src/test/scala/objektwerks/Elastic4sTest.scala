@@ -1,8 +1,8 @@
 package objektwerks
 
 import com.sksamuel.elastic4s.http.ElasticDsl._
+import com.sksamuel.elastic4s.http.{ElasticClient, ElasticProperties, Response}
 import com.sksamuel.elastic4s.http.search.SearchResponse
-import com.sksamuel.elastic4s.http._
 import com.sksamuel.elastic4s.requests.common.RefreshPolicy
 import com.typesafe.config.ConfigFactory
 
