@@ -4,13 +4,17 @@ import com.sksamuel.elastic4s.http.ElasticDsl._
 import com.sksamuel.elastic4s.http.search.SearchResponse
 import com.sksamuel.elastic4s.http._
 import com.sksamuel.elastic4s.requests.common.RefreshPolicy
+import com.typesafe.config.ConfigFactory
 
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.must.Matchers
 
 class Elastic4sTest extends AnyFunSuite with Matchers {
+  val conf = ConfigFactory.load("test.conf")
+  val url = conf.getString("url")
+
   test("search") {
-    val client = ElasticClient(ElasticProperties("http://localhost:9200"))
+    val client = ElasticClient(ElasticProperties(url))
 
     client.execute {
       indexInto("bands" / "artists") fields ("name" -> "coldplay") refresh (RefreshPolicy.WAIT_FOR)
