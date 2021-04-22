@@ -1,7 +1,7 @@
 ElasticSearch
 -------------
->Elasticsearch feature tests.
+>Elasticsearch feature tests. **Warning** This is broken due to a missing dependency issue.
 
 Test
 ----
-1. sbt test
+1. sbt clean test
