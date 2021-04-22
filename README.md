@@ -1,6 +1,11 @@
 ElasticSearch
 -------------
->Elasticsearch feature tests. **Warning** This is broken due to a missing dependency issue.
+>Elasticsearch feature tests.
+
+Warning
+-------
+>The Elastic4sTest is broken due to a missing dependency issue.
+>See source for details.
 
 Test
 ----
