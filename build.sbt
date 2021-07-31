@@ -7,8 +7,8 @@ libraryDependencies ++= {
   Seq(
     "com.sksamuel.elastic4s" %% "elastic4s-core" % elastic4sVersion,
     "com.sksamuel.elastic4s" %% "elastic4s-http" % "6.7.8",
-    "com.typesafe" % "config" % "1.4.0",
-    "ch.qos.logback" % "logback-classic" % "1.2.3",
+    "com.typesafe" % "config" % "1.4.1",
+    "ch.qos.logback" % "logback-classic" % "1.2.5",
     "com.sksamuel.elastic4s" %% "elastic4s-testkit" % elastic4sVersion % Test,
     "org.scalatest" %% "scalatest" % "3.2.9" % Test
   )
