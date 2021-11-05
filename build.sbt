@@ -1,7 +1,7 @@
 name := "elasticsearch"
 organization := "objektwerks"
 version := "0.1-SNAPSHOT"
-scalaVersion := "2.13.6"
+scalaVersion := "2.13.7"
 libraryDependencies ++= {
   val elastic4sVersion = "7.15.0"
   Seq(
