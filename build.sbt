@@ -7,7 +7,7 @@ libraryDependencies ++= {
   Seq(
     "com.sksamuel.elastic4s" %% "elastic4s-client-esjava" % elastic4sVersion,
     "com.typesafe" % "config" % "1.4.1",
-    "ch.qos.logback" % "logback-classic" % "1.2.9",
+    "ch.qos.logback" % "logback-classic" % "1.2.10",
     "com.sksamuel.elastic4s" %% "elastic4s-testkit" % elastic4sVersion % Test,
     "org.scalatest" %% "scalatest" % "3.2.10" % Test
   )
