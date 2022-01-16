@@ -3,7 +3,7 @@ organization := "objektwerks"
 version := "0.1-SNAPSHOT"
 scalaVersion := "2.13.8"
 libraryDependencies ++= {
-  val elastic4sVersion = "7.16.0"
+  val elastic4sVersion = "7.16.3"
   Seq(
     "com.sksamuel.elastic4s" %% "elastic4s-client-esjava" % elastic4sVersion,
     "com.typesafe" % "config" % "1.4.1",
