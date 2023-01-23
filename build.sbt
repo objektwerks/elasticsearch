@@ -9,6 +9,6 @@ libraryDependencies ++= {
     "com.typesafe" % "config" % "1.4.2",
     "ch.qos.logback" % "logback-classic" % "1.4.5",
     "com.sksamuel.elastic4s" %% "elastic4s-testkit" % elastic4sVersion % Test,
-    "org.scalatest" %% "scalatest" % "3.2.14" % Test
+    "org.scalatest" %% "scalatest" % "3.2.15" % Test
   )
 }
