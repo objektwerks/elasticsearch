@@ -1,6 +1,6 @@
 ElasticSearch
 -------------
->Elasticsearch feature tests.
+>Elasticsearch feature tests using Scala 3.
 
 Apple M1
 --------
