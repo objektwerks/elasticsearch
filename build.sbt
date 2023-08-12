@@ -1,7 +1,7 @@
 name := "elasticsearch"
 organization := "objektwerks"
 version := "0.1-SNAPSHOT"
-scalaVersion := "3.3.1-RC4"
+scalaVersion := "3.3.1-RC5"
 libraryDependencies ++= {
   val elastic4sVersion = "8.8.1"
   Seq(
