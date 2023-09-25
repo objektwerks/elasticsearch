@@ -11,11 +11,11 @@ import com.typesafe.config.ConfigFactory
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.must.Matchers
 
-class Elastic4sTest extends AnyFunSuite with Matchers {
+final class Elastic4sTest extends AnyFunSuite with Matchers:
   val conf = ConfigFactory.load("test.conf")
   val url = conf.getString("url")
 
-  test("search") {
+  test("search"):
     val elasticProps = ElasticProperties(url)
     val client = ElasticClient( JavaClient(elasticProps) )
 
@@ -42,5 +42,3 @@ class Elastic4sTest extends AnyFunSuite with Matchers {
     println(response.result.hits.hits.head.sourceAsString)
 
     client.close()
-  }
-}
