@@ -9,7 +9,7 @@ libraryDependencies ++= {
     "com.typesafe" % "config" % "1.4.3",
     "ch.qos.logback" % "logback-classic" % "1.5.0",
     "com.sksamuel.elastic4s" %% "elastic4s-testkit" % elastic4sVersion % Test,
-    "org.scalatest" %% "scalatest" % "3.2.17" % Test
+    "org.scalatest" %% "scalatest" % "3.2.18" % Test
   )
 }
 scalacOptions ++= Seq(
